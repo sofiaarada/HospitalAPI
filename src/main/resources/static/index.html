@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HOSPITAL SAN GABRIEL</title> 
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="./js/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDOS A TU HOSPITAL SAN GABRIEL</h1>
+    </header>
+    
+    <main>
+        <div class="contenedor-superior">
+            
+            <form class="login-paciente">
+                <h2>Registro Pacientes</h2>
+                <div class="divLabel">
+                    <label for="inputName" class="label-name">Nombre:</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="divLabel">
+                    <label for="inputEdad" class="form-label">Edad:</label>
+                    <input type="number" class="form-control" id="inputEdad" min="0" max="120">
+                </div>
+                <div class="divLabel">
+                    <label for="inputEPS" class="form-label">EPS:</label>
+                    <input type="text" class="form-control" id="inputEPS">
+                </div>
+                <div class="divLabel">
+                    <label for="inputTelefono" class="form-label">Número de Teléfono:</label>
+                    <input type="text" class="form-control" id="inputTelefono" pattern="[0-9]*" inputmode="numeric" maxlength="10">
+                </div>
+                <div class="divLabel">
+                    <label for="inputEmail" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+                <div class="boton">
+                    <button type="submit" class="btnSubmit">Registrarse</button>
+                </div>
+            </form>
+            
+            <div class="aside-card">
+                <img src="img/logoHospital.png" alt="Hospital San Gabriel">
+                <p>Estamos comprometidos con tu salud</p>
+            </div>
+            
+        </div> <hr>
+        
+        <section id="tabla-section">
+            <div class="tabla-pacientes">
+                <h2 id="titleTabla">Lista de Pacientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>EPS</th>
+                            <th>Número de teléfono</th>
+                            <th>Email</th>
+							<th>Acciones</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
